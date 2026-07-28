@@ -1,0 +1,31 @@
+[package]
+name = "agent-hooks-manager"
+version = "0.0.1"
+description = "Unified hooks manager for AI coding agents - manage, deploy, audit, and clean up hooks across Claude Code, Codex, Grok Build, and more."
+edition = "2021"
+license = "MIT"
+
+[lib]
+name = "agent_hooks_manager_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-process = "2"
+tauri-plugin-updater = "2"
+tauri-plugin-shell = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.32", features = ["bundled"] }
+toml_edit = "0.22"          # comment-preserving TOML writes (Codex)
+thiserror = "2"
+uuid = { version = "1", features = ["v4", "serde"] }
+tokio = { version = "1", features = ["full"] }
+dirs = "5"
+
+[features]
+default = []

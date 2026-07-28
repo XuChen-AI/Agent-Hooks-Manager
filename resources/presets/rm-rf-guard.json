@@ -1,0 +1,12 @@
+{
+  "name": "rm -rf Guard",
+  "event": "PreToolUse",
+  "matcher": "Bash",
+  "hook_type": "Command",
+  "command": "bash ~/.agent-hooks-manager/scripts/rm-rf-guard.sh",
+  "timeout": 5,
+  "enabled": true,
+  "scope": "Global",
+  "target_agents": ["claude-code", "codex", "grok-build"],
+  "source": { "Preset": { "preset_id": "rm-rf-guard" } }
+}
