@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/logo.png" alt="agent-hooks-manager logo" width="256">
+</p>
+
 # agent-hooks-manager
 
 > 跨 AI 编码 agent 的统一 hooks 管理器--集中管理、部署、审计、清理 Claude Code / Codex / Grok Build / Gemini CLI / Cursor 等多 agent 的 hooks。

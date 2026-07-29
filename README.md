@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/logo.png" alt="agent-hooks-manager logo" width="256">
+</p>
+
 # agent-hooks-manager
 
 > Unified hooks manager for AI coding agents - manage, deploy, audit, and clean up hooks across Claude Code, Codex, Grok Build, Gemini CLI, Cursor, and more.
